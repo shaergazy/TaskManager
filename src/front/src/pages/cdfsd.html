@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ОРТ онлайн</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('typeawaynumerodos.jpg') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+        }
+        .content {
+            max-width: 600px;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+        }
+        .content h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        .content p {
+            font-size: 1.2rem;
+            margin-bottom: 40px;
+        }
+        .content .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 1rem;
+            color: #333;
+            background-color: #fff;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+        .content .btn:hover {
+            background-color: #ddd;
+        }
+        .edit-btn {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            background-color: #000;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .statistics {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: url('image.png') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            position: relative;
+        }
+        .statistics::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), rgba(0, 63, 113, 0.6); /* добавлен синий фон */
+            z-index: 1;
+        }
+        .statistics .stat {
+            flex: 1;
+            padding: 20px;
+            position: relative;
+            z-index: 2;
+        }
+        .statistics .stat h2 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+        .statistics .stat p {
+            font-size: 1.2rem;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h1>Готовьтесь к ОРТ онлайн</h1>
+            <p>Совершенствуйте свои знания по всем предметам — это комфортно и доступно.</p>
+            <a href="#" class="btn">Начать</a>
+        </div>
+    </div>
+    <div class="statistics">
+        <div class="stat">
+            <h2>25</h2>
+            <p>Преподавателей по разным предметам, которые знают свое дело.</p>
+        </div>
+        <div class="stat">
+            <h2>100+</h2>
+            <p>Учеников по всему Кыргызстану</p>
+        </div>
+        <div class="stat">
+            <h2>160</h2>
+            <p>Средний балл ОРТ наших учеников.</p>
+        </div>
+    </div>
+</body>
+</html>
